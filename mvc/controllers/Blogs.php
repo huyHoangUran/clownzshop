@@ -2,8 +2,8 @@
 
 class Blogs
 {
-    function SayHi($ho, $ten)
+    function SayHi()
     {
-        echo $ho . " " . $ten;
+        echo "SayHi";
     }
 }
