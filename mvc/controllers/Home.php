@@ -8,7 +8,7 @@ class Home
     }
     function Show()
     {
-        echo " home - Show";
+        echo " Đây là màn hình home - Show";
     }
 }
 ?>
