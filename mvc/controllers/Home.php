@@ -1,14 +1,16 @@
 <?php
 
-class Home
+class Home extends Controller
 {
     function SayHi()
     {
-        echo "Home - SạHi";
+        $hoang  = $this->model("SinhVienModel");
+        echo $hoang->getSV();
     }
-    function Show()
+    function Show($a, $b)
     {
-        echo " Đây là màn hình home - Show";
+        $hoang = $this->model("SinhVienModel");
+        echo $hoang->tong($a, $b);
     }
 }
 ?>
