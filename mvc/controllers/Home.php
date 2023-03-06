@@ -7,7 +7,7 @@ class Home extends Controller
         $name  = $this->model("SinhVienModel");
         echo $name->getSV();
     }
-    function Shows($a, $b)
+    function List($a, $b)
     {
         $hoang = $this->model("SinhVienModel");
         echo $hoang->hieu($a, $b);
