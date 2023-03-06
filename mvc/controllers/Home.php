@@ -15,7 +15,7 @@ class Home extends Controller
     function Show($a, $b)
     {
         $hoang = $this->model("SinhVienModel");
-        echo $hoang->tong($a, $b);
+        echo $hoang->hieu($a, $b);
     }
 }
 ?>
