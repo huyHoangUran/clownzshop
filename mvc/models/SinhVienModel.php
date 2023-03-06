@@ -11,4 +11,8 @@ class SinhVienModel
     {
         return $a + $b;
     }
+    public function hieu($a, $b)
+    {
+        return $a + $b;
+    }
 }
