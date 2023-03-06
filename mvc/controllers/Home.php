@@ -4,6 +4,8 @@ class Home extends Controller
 {
     function SayHi()
     {
+        $name  = $this->model("SinhVienModel");
+        echo $name->getSV();
         $hoang  = $this->model("SinhVienModel");
         echo $hoang->getSV();
     }
