@@ -10,7 +10,12 @@ class Home extends Controller
     function Show($a, $b)
     {
         $hoang = $this->model("SinhVienModel");
-        echo $hoang->tong($a, $b);
+        $tong =  $hoang->tong($a, $b);
+        $this->view("aodep", [
+            "count" => $tong,
+            "mau" => "green",
+            "fontsize" => "1000px"
+        ]);
     }
 }
 ?>
