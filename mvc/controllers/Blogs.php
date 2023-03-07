@@ -6,4 +6,8 @@ class Blogs
     {
         echo "SayHi";
     }
+    function Hello()
+    {
+        echo "hello";
+    }
 }
