@@ -17,7 +17,8 @@ class Home extends Controller
         $this->view("aodep", [
             "page" => "contact",
             "sothich" => ['a', 'b', 'c'],
-            "sv" => $hoang->sinhVien()
+            "sv" => $hoang->sinhVien(),
+            "class" => $hoang->Lop()
         ]);
     }
     function News($a, $b)

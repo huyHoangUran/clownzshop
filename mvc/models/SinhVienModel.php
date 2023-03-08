@@ -23,4 +23,12 @@ class SinhVienModel extends DB
         $stmt->execute();
         return $sinhVien = $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+
+    public function Lop()
+    {
+        $qr = "SELECT * FROM class";
+        $stmt = $this->con->prepare($qr);
+        $stmt->execute();
+        return $class = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
 }

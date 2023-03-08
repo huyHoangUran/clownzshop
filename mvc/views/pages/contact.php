@@ -16,6 +16,11 @@
         <h2><?= $sV['namSinh'] ?></h2>
 
     <?php endforeach ?>
+    <?php foreach ($data['class'] as $cL) : ?>
+        <h2><?= $cL['tenLop'] ?></h2>
+        <h2><?= $cL['id'] ?></h2>
+
+    <?php endforeach ?>
 </body>
 
 </html>
