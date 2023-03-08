@@ -13,11 +13,11 @@ class Home extends Controller
     {
         $hoang = $this->model("SinhVienModel");
 
-        $tong =  $hoang->tong($a, $b);
+        // $tong =  $hoang->tong($a, $b);
         $this->view("aodep", [
-            "count" => $tong,
             "page" => "contact",
-            "sothich" => ['a', 'b', 'c']
+            "sothich" => ['a', 'b', 'c'],
+            "sv" => $hoang->sinhVien()
         ]);
     }
     function News($a, $b)
