@@ -13,8 +13,18 @@ class Home extends Controller
         $tong =  $hoang->tong($a, $b);
         $this->view("aodep", [
             "count" => $tong,
-            "mau" => "green",
-            "fontsize" => "1000px"
+            "page" => "contact",
+            "sothich" => ['a', 'b', 'c']
+        ]);
+    }
+    function News($a, $b)
+    {
+        $hoang = $this->model("SinhVienModel");
+        $tong =  $hoang->tong($a, $b);
+        $this->view("aodep", [
+            "count" => $tong,
+            "page" => "news",
+            "sothich" => ['a', 'b', 'c']
         ]);
     }
 }

@@ -1,0 +1,1 @@
+<a href="../../../home/show/1/2">news</a>
