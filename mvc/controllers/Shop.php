@@ -1,13 +1,16 @@
+
 <?php
 
-class Shop
+class Shop extends Controller
 {
+
     function SayHi()
     {
-        echo "SayHi";
-    }
-    function Hello()
-    {
-        echo "hello";
+        $lop = $this->model("LopModel");
+        return $this->view("aodep", [
+            'Lops' => $lop->getAllLop(),
+            'page' => 'shop'
+        ]);
     }
 }
+?>
